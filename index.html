@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Task Manager Logo">
+            <h1>Task Manager</h1>
+        </div>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Add a new task" />
+            <button id="create" onclick="addTask()">CREATE <i class="fa fa-plus" aria-hidden="true"></i></button>
+        </div>
+        <div class="task-list">
+            <ul id="tasks"></ul>
+        </div>
+        <div class="task-count">
+            <p>Created Tasks: <span id="totalTasks">0</span></p>
+            <p>Completed Tasks: <span id="completedTasks">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
